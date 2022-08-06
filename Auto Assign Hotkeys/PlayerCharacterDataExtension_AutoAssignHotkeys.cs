@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MultiplayerARPG
 {
-    public static partial class PlayerCharacterDataExtension
+    public static partial class PlayerCharacterDataExtensions
     {
         /// <summary>
         /// This extension method will be called when setting up a new character. It will assign any skills that are
