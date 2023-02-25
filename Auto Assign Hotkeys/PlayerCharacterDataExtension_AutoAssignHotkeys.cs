@@ -17,18 +17,18 @@ namespace MultiplayerARPG
                 return;
 
             string[] hotkeyIDs = GameInstance.Singleton.hotkeysToAssign;
-            Dictionary<BaseSkill, short> skills = character.GetSkills(true);
+            Dictionary<BaseSkill, int> skills = character.GetSkills(true);
             if (skills == null || hotkeyIDs == null)
                 return;
 
             int hotkeyIndex = 0;
-            foreach (KeyValuePair<BaseSkill, short> skillData in skills)
+            foreach (KeyValuePair<BaseSkill, int> skillData in skills)
             {
                 if (hotkeyIndex >= hotkeyIDs.Length)
                     return; // No more hotkey slots left
 
                 BaseSkill skill = skillData.Key;
-                short skillLevel = skillData.Value;
+                int skillLevel = skillData.Value;
                 if (skillLevel > 0 && skill != null && !skill.IsPassive) // Don't assign unlearned or passive skills
                 {
                     character.Hotkeys.Add(new CharacterHotkey()
