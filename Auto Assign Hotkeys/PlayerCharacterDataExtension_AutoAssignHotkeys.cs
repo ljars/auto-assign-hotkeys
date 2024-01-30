@@ -17,7 +17,7 @@ namespace MultiplayerARPG
                 return;
 
             string[] hotkeyIDs = GameInstance.Singleton.hotkeysToAssign;
-            Dictionary<BaseSkill, int> skills = character.GetSkills(true);
+            Dictionary<BaseSkill, int> skills = character.GetCaches().Skills;
             if (skills == null || hotkeyIDs == null)
                 return;
 
