@@ -1,5 +1,5 @@
 # auto-assign-hotkeys
-Addon for SURIYUN's MMORPG KIT (v1.80e)
+Addon for SURIYUN's MMORPG KIT (v1.86d)
 
 ## Installation
 1. Import the `Auto Assign Hotkeys` folder.
